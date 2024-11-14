@@ -12,9 +12,9 @@
 </head>
 <body class="bg-gray-100 font-sans">
 
-<!-- Add the background image here -->
-<div class="flex justify-center items-center min-h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?crop,farming');">
-    <div class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg w-full sm:w-96">
+<!-- Add the background image and ensure it covers the entire screen -->
+<div class="flex justify-center items-center min-h-screen bg-cover bg-center" style="background-image: url('https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+    <div class="bg-white bg-opacity-80 p-8 rounded-lg shadow-lg w-full sm:w-11/12 md:w-96 lg:w-1/3 xl:w-1/4">
         <h1 class="text-3xl font-bold text-center text-green-600 mb-6">Crop Prediction Model</h1>
 
         <!-- Form for inputs -->
@@ -37,22 +37,22 @@
 
                 <div>
                     <label for="Temperature" class="block text-lg font-medium text-gray-700">Temperature</label>
-                    <input type="number" name="Temperature" placeholder="Enter Temperature" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+                    <input type="number" name="Temperature" placeholder="Enter Temperature" required step="0.00000001" class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
                 </div>
 
                 <div>
                     <label for="humidity" class="block text-lg font-medium text-gray-700">Humidity</label>
-                    <input type="number" name="humidity" placeholder="Enter Humidity" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+                    <input type="number" name="humidity" placeholder="Enter Humidity" required step="0.00000001" class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
                 </div>
 
                 <div>
                     <label for="ph" class="block text-lg font-medium text-gray-700">pH Level</label>
-                    <input type="number" name="ph" placeholder="Enter pH value" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+                    <input type="number" name="ph" placeholder="Enter pH value" required step="0.00000001" class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
                 </div>
 
                 <div>
                     <label for="rainfall" class="block text-lg font-medium text-gray-700">Rainfall</label>
-                    <input type="number" name="rainfall" placeholder="Enter Rainfall" required class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
+                    <input type="number" name="rainfall" placeholder="Enter Rainfall" required step="0.00000001" class="w-full p-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" />
                 </div>
 
                 <div class="text-center">
